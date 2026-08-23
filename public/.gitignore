@@ -1,32 +1,43 @@
 
 # --- Файлы логов и временные файлы ---
-*.log      # Игнорировать все файлы .log
+# Игнорировать все файлы .log
 logs/*.log
 
- # Игнорировать все временные файлы
+# Игнорировать все временные файлы
 *.tmp     
 *.temp
-doc/*.txt
 doc/**/*.txt
 *.exe
 /TODO
 
 # Файлы конфигурации и кэша 
-config.local.js # Конкретный файл конфигурации
-.env             # Файл с секретами
+# Конкретный файл конфигурации
+config.local.js 
+
+# Файл с секретами
+.env            
 *.cache
 
-# --- Папки зависимостей ---
-node_modules/ # Все зависимости Node.js
+# --- Папки зависимостей #Все зависимости Node.js---
+node_modules/ 
 vendor/
 
 # --- Папки скомпилированных файлов и chopin ---
-build/        # Каталог сборки
-dist/         # Каталог сборки
+# Каталог сборки
+build/   
+
+# Каталог сборки    
+dist/     
 temp/
 
 # --- Файлы IDE и операционной системы ---
 .DS_Store
-Thumbs.db     # Windows
-.idea/        # IntelliJ IDEA, PhpStorm
-.vscode/      # VS Code
+
+# Windows
+Thumbs.db  
+
+# IntelliJ IDEA, PhpStorm
+.idea/  
+
+# VS Code
+.vscode/     
