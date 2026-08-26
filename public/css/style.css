@@ -1,0 +1,46 @@
+@charset "UTF-8";
+.lab {
+  color: greenyellow;
+  font-size: 30px;
+}
+
+.btn {
+  width: 500px;
+  height: 70px;
+  border-radius: 10px;
+  border: 1px solid #000;
+  color: #0905f0;
+  font-size: 30px;
+  background-color: #ccc;
+}
+
+.inp {
+  padding: 20px 100px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  color: #1a2a6c;
+  font-size: 30px;
+  background-color: #ccc;
+}
+
+/* Вынесено отдельно для стабильной работы везде */
+.inp::-webkit-input-placeholder {
+  color: #0905f0;
+  font-size: 30px;
+}
+.inp::-moz-placeholder {
+  color: #0905f0;
+  font-size: 30px;
+}
+.inp:-ms-input-placeholder {
+  color: #0905f0;
+  font-size: 30px;
+}
+.inp::-ms-input-placeholder {
+  color: #0905f0;
+  font-size: 30px;
+}
+.inp::placeholder {
+  color: #0905f0;
+  font-size: 30px;
+}
