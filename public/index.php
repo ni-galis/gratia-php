@@ -2,6 +2,7 @@
 
   <div class="header">
     <div class="container">
+      
       <div class="header__inner" style="background: url('./image/header/BG.jpg');  background-position: center; background-size: cover;  background-repeat: no-repeat;">
 
         <img class="header-01" src="./image/header/01.png" alt="01">
