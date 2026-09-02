@@ -6,6 +6,13 @@ $sql->execute();
 $meta = $sql->fetch(PDO::FETCH_ASSOC);
 ?>
 
+<?php
+$sql = "SELECT * FROM nav";
+$sql = $pdo->prepare($sql);
+$sql->execute();
+$nav = $sql->fetch(PDO::FETCH_ASSOC);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,7 +32,7 @@ $meta = $sql->fetch(PDO::FETCH_ASSOC);
       <div class="nav__content">
         <div class="nav-logo">
           <img class="logo-img" src="./image/nav/logo.jpg" alt="logo">
-          <a href="pages-site/gratia.php"><span class="logo-txt">Gratia</span></a>
+          <a href="pages-site/gratia.php"><span class="logo-txt"><?php echo $nav['logo'] ?></span></a>
         </div>
 
         <style>
@@ -60,16 +67,16 @@ $meta = $sql->fetch(PDO::FETCH_ASSOC);
           <span></span>
           <span></span>
         </div>
-
         <div class="menu-item">
           <ul class="nav__menu">
-            <li class="nav__item"><a href="/user.php" class="nav__link">About</a></li>
-            <li class="nav__item"><a href="/user.php" class="nav__link">Menu</a></li>
-            <li class="nav__item"><a href="/user.php" class="nav__link">Gallery</a></li>
-            <li class="nav__item"><a href="/user.php" class="nav__link">Contact</a></li>
-           
+            <li class="nav__item"><a href="/about.php" class="nav__link"><?= htmlspecialchars($nav['about'] ?? 'about') ?></a></li>
+            <li class="nav__item"><a href="/menu.php" class="nav__link"><?= htmlspecialchars($nav['menu'] ?? 'menu') ?></a></li>
+            <li class="nav__item"><a href="/gallery.php" class="nav__link"><?= htmlspecialchars($nav['gallery'] ?? 'gallery') ?></a></li>
+            <li class="nav__item"><a href="/contact.php" class="nav__link"><?= htmlspecialchars($nav['contact'] ?? 'contact') ?></a></li>
           </ul>
-        </div><!--nav__menu-->
+        </div><!--menu-item-->
+
+
       </div><!--nav__content-->
     </div><!--container-->
   </div><!--nav-->
