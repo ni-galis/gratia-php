@@ -11,7 +11,7 @@ $meta = $sql->fetch(PDO::FETCH_ASSOC);
 
 <head>
   <meta charset="UTF-8">
-    <title><?php echo $meta['title'] ?></title>
+  <title><?php echo $meta['title'] ?></title>
   <meta name="description" content="<?php echo $meta['description'] ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="scss/css/style.css">
@@ -24,8 +24,8 @@ $meta = $sql->fetch(PDO::FETCH_ASSOC);
     <div class="container">
       <div class="nav__content">
         <div class="nav-logo">
-          <a href="#"><img class="logo-img" src="./image/nav/logo.jpg" alt="logo"></a>
-          <a href="#"><span class="logo-txt">Gratia</span></a>
+          <img class="logo-img" src="./image/nav/logo.jpg" alt="logo">
+          <a href="pages-site/gratia.php"><span class="logo-txt">Gratia</span></a>
         </div>
 
         <style>
@@ -48,7 +48,7 @@ $meta = $sql->fetch(PDO::FETCH_ASSOC);
           }
         </style>
 
-        <form action="./../login.php" method="post">
+        <form action="../login.php" method="post">
           <label class="nav-lab">введи пароль 111</label>&nbsp;&nbsp;
           <input class="nav-inp" type="text" name="pass" placeholder="вводи осторожно">&nbsp;&nbsp;
           <input class="nav-inp" type="submit" name="btn" value="войти">
@@ -63,10 +63,11 @@ $meta = $sql->fetch(PDO::FETCH_ASSOC);
 
         <div class="menu-item">
           <ul class="nav__menu">
-            <li class="nav__item"><a href="./reg-auth.php" class="nav__link">About</a></li>
-            <li class="nav__item"><a href="./reg-auth.php" class="nav__link">Menu</a></li>
-            <li class="nav__item"><a href="./reg-auth.php" class="nav__link">Gallery</a></li>
-            <li class="nav__item"><a href="./reg-auth.php" class="nav__link">Contact</a></li>
+            <li class="nav__item"><a href="/user.php" class="nav__link">About</a></li>
+            <li class="nav__item"><a href="/user.php" class="nav__link">Menu</a></li>
+            <li class="nav__item"><a href="/user.php" class="nav__link">Gallery</a></li>
+            <li class="nav__item"><a href="/user.php" class="nav__link">Contact</a></li>
+           
           </ul>
         </div><!--nav__menu-->
       </div><!--nav__content-->

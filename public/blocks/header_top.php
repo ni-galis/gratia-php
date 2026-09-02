@@ -1,8 +1,10 @@
 <!DOCTYPE html>
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
-  <link rel="shortcut icon" href="./img/favicon/favicon (11).ico" type="image/x-icon">
   <link rel="stylesheet" href="styles.css">
-  <title>TITLE</title>
-</head>
+  <title><?= $title ?? 'Главная страница' ?></title>
+  <!-- Исправлено: добавлен закрывающий тег ?> и защита от пустой переменной -->
+  <link rel="shortcut icon" href="/img/favicon/<?= $fav ?? 'favicon.ico' ?>" type="image/x-icon">
+  <link rel="stylesheet" href="/scss/css/style.css">

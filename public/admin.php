@@ -1,5 +1,4 @@
 <?php session_start() ?>
-
 <!DOCTYPE html>
 
 <head>
@@ -24,15 +23,14 @@
     <?php if (!empty($_SESSION['login'])) : ?>
 
       <!--<div style="font-size:35px;color:#ec870aff">-->
-        <?php
-        echo "Административная панель приветствует тебя храбрый " . $_SESSION["login"];
-        ?>
+      <?php
+      echo "Административная панель приветствует тебя храбрый " . $_SESSION["login"];
+      ?>
       <!--</div>-->
       <br><br><a href="./../logout.php" style="color:#f02b2bff">Выйти</a><br><br>
 
       <a href="./admin_pages/logo.php" style="color:aqua">nav</a> |
-       <a href="./admin_pages/logo.php" style="color:aqua">header</a> |
-        <!--<a href="./pages/about.php" style="color:aqua">header</a> |-->
+      <a href="./admin_pages/logo.php" style="color:aqua">header</a> |
   </div>
 
 <?php else:

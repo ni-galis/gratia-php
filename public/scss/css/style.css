@@ -112,6 +112,219 @@ body.lock {
   margin: 0 auto;
 }
 
+.about__content {
+  max-width: 100%;
+  height: auto;
+  min-height: 1235px;
+  overflow: hidden;
+  position: relative;
+}
+
+.about-site {
+  max-width: 100%;
+  height: auto;
+  margin-left: 50%;
+  -webkit-transform: translate(-50%, 0px);
+      -ms-transform: translate(-50%, 0px);
+          transform: translate(-50%, 0px);
+  padding-top: 50px;
+  margin-bottom: 20px;
+}
+
+.about__text {
+  max-width: 1200px;
+  font-size: 25px;
+  margin: 0 auto;
+  color: #2e37ac;
+  margin-bottom: 20px;
+}
+
+.btn {
+  width: 200px;
+  height: 70px;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 30px;
+  position: absolute;
+  top: 60px;
+  left: 100px;
+  z-index: 1;
+}
+
+.contact__content {
+  max-width: 100%;
+  height: auto;
+  min-height: 1235px;
+  overflow: hidden;
+}
+
+.contact-site {
+  max-width: 100%;
+  height: auto;
+  margin-left: 50%;
+  -webkit-transform: translate(-50%, 0px);
+      -ms-transform: translate(-50%, 0px);
+          transform: translate(-50%, 0px);
+  padding-top: 50px;
+  margin-bottom: 20px;
+}
+
+.contact__text {
+  max-width: 1200px;
+  font-size: 25px;
+  margin: 0 auto;
+  color: #2e37ac;
+  margin-bottom: 20px;
+}
+.contact__text .btn {
+  width: 200px;
+  height: 70px;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 30px;
+  position: absolute;
+  top: 60px;
+  left: 100px;
+  z-index: 1;
+}
+
+.menu__content {
+  max-width: 100%;
+  height: auto;
+  min-height: 1235px;
+  overflow: hidden;
+}
+
+.menu-site {
+  max-width: 100%;
+  height: auto;
+  margin-left: 50%;
+  -webkit-transform: translate(-50%, 0px);
+      -ms-transform: translate(-50%, 0px);
+          transform: translate(-50%, 0px);
+  padding-top: 50px;
+  margin-bottom: 20px;
+}
+
+.menu__text {
+  max-width: 1200px;
+  font-size: 25px;
+  margin: 0 auto;
+  color: #2e37ac;
+  margin-bottom: 20px;
+}
+
+.btn {
+  width: 200px;
+  height: 70px;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 30px;
+  position: absolute;
+  top: 60px;
+  left: 100px;
+  z-index: 1;
+}
+
+.gallery__content {
+  max-width: 100%;
+  height: auto;
+  min-height: 1235px;
+  overflow: hidden;
+}
+
+.gallery-site {
+  max-width: 100%;
+  height: auto;
+  margin-left: 50%;
+  -webkit-transform: translate(-50%, 0px);
+      -ms-transform: translate(-50%, 0px);
+          transform: translate(-50%, 0px);
+  padding-top: 50px;
+  margin-bottom: 20px;
+}
+
+.gallery__text {
+  max-width: 1200px;
+  font-size: 25px;
+  margin: 0 auto;
+  color: #2e37ac;
+  margin-bottom: 20px;
+}
+.gallery__text .btn {
+  width: 200px;
+  height: 70px;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 30px;
+  position: absolute;
+  top: 60px;
+  left: 100px;
+  z-index: 1;
+}
+
+.gratia__content {
+  max-width: 100%;
+  height: auto;
+  min-height: 1000px;
+  overflow: hidden;
+}
+
+.gratia__text {
+  max-width: 1920px;
+  font-size: 25px;
+  margin: 0 auto;
+  color: #2e37ac;
+  padding-top: 200px;
+  margin-bottom: 90px;
+}
+.gratia__text .btn {
+  width: 200px;
+  height: 70px;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 30px;
+  position: absolute;
+  top: 60px;
+  left: 100px;
+  z-index: 1;
+}
+
+.book-table__content {
+  max-width: 100%;
+  height: auto;
+  min-height: 1000px;
+  overflow: hidden;
+}
+
+.book-table {
+  max-width: 100%;
+  height: auto;
+  margin-left: 50%;
+  -webkit-transform: translate(-50%, 0px);
+      -ms-transform: translate(-50%, 0px);
+          transform: translate(-50%, 0px);
+  padding-top: 50px;
+}
+
+.btn {
+  width: 200px;
+  height: 70px;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 30px;
+  position: absolute;
+  top: 60px;
+  left: 100px;
+  z-index: 1;
+}
+
 .nav {
   width: 100%;
   position: absolute;
@@ -138,12 +351,21 @@ body.lock {
 }
 
 .logo-txt {
+  display: inline-block;
   font-size: 24px;
   font-family: "Montserrat";
   color: rgb(255, 255, 255);
   font-weight: bold;
   line-height: 1.5;
   padding-left: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.logo-txt:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+  color: aqua;
 }
 
 .nav__menu {
@@ -167,11 +389,20 @@ body.lock {
 }
 
 .nav__link {
+  display: inline-block;
   font-size: 16px;
   font-family: "Montserrat";
   color: rgb(255, 255, 255);
   font-weight: bold;
   line-height: 2.25;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.nav__link:hover {
+  -webkit-transform: scale(1.3);
+      -ms-transform: scale(1.3);
+          transform: scale(1.3);
+  color: aqua;
 }
 
 .burger-btn {
