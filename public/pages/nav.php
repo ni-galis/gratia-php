@@ -69,10 +69,10 @@ $nav = $sql->fetch(PDO::FETCH_ASSOC);
         </div>
         <div class="menu-item">
           <ul class="nav__menu">
-            <li class="nav__item"><a href="/about.php" class="nav__link"><?= htmlspecialchars($nav['about'] ?? 'about') ?></a></li>
-            <li class="nav__item"><a href="/menu.php" class="nav__link"><?= htmlspecialchars($nav['menu'] ?? 'menu') ?></a></li>
-            <li class="nav__item"><a href="/gallery.php" class="nav__link"><?= htmlspecialchars($nav['gallery'] ?? 'gallery') ?></a></li>
-            <li class="nav__item"><a href="/contact.php" class="nav__link"><?= htmlspecialchars($nav['contact'] ?? 'contact') ?></a></li>
+            <li class="nav__item"><a href="/user.php" class="nav__link"><?= htmlspecialchars($nav['about'] ?? 'about') ?></a></li>
+            <li class="nav__item"><a href="/user.php" class="nav__link"><?= htmlspecialchars($nav['menu'] ?? 'menu') ?></a></li>
+            <li class="nav__item"><a href="/user.php" class="nav__link"><?= htmlspecialchars($nav['gallery'] ?? 'gallery') ?></a></li>
+            <li class="nav__item"><a href="/user.php" class="nav__link"><?= htmlspecialchars($nav['contact'] ?? 'contact') ?></a></li>
           </ul>
         </div><!--menu-item-->
 

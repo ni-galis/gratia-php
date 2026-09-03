@@ -42,7 +42,6 @@ session_start();
         <a href="/pages-site/menu.php" style="color:aqua">Menu</a> |
         <a href="/pages-site/gallery.php" style="color:aqua">Gallery</a> |
         <a href="/pages-site/contact.php" style="color:aqua">Contact</a> |
-          <a href="/pages-site/gratia.php" style="color:aqua">Gratia</a> |
       </div>
 
     <?php else: ?>
