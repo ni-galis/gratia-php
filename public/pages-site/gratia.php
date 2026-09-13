@@ -4,7 +4,7 @@ if (session_status() === PHP_SESSION_NONE) {
   session_start();
 }
 
-$title = 'LOGO';
+$title = 'GRATIA';
 $fav = 'favicon1.ico';
 
 // Используем __DIR__ для 100% надежности PHP-подключения
@@ -13,7 +13,7 @@ include __DIR__ . '/../blocks/header_top.php';
 
 <body style="background-color: #ccc;">
 
-  <form action="/index.php" method="post">
+  <form action="/logout.php" method="post">
     <input class="btn" type="submit" value="Выход">
   </form>
 

@@ -14,7 +14,7 @@ include __DIR__ . '/../blocks/header_top.php';
 <body style="background-color: #ccc;">
 
   <form action="/user.php" method="post">
-    <input class="btn" type="submit" value="Выход">
+    <input class="about__btn" type="submit" value="Выход">
   </form>
 
   <div class="about">

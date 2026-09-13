@@ -13,12 +13,12 @@
 #2c5364);
 height:100vh;">
 
-  <h3 style="color:#ccff00;text-align: center; padding-top:200px;font-size:50px;">РЕГИСТРАЦИЯ или АВТОРИЗАЦИЯ</h3>
+  <h3 style="color:#ccff00;text-align: center; padding-top:100px;font-size:50px;">РЕГИСТРАЦИЯ или АВТОРИЗАЦИЯ</h3>
 
-  <div style="display:flex; gap: 100px;justify-content: center;">
+
+  <div class="reg__auth" style="justify-content: center;">
     <div>
-      <form style="text-align:center;padding-top: 50px;" action="./reg.php" method="post">
-
+      <form style="text-align:center;padding-top: 50px;" action="/reg.php" method="post">
 
         <label class="lab">регистрация</label><br><br>
         <input class="btn" type="submit" name="reg-btn" value="регистрация"><br><br>

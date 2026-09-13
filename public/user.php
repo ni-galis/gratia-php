@@ -52,8 +52,8 @@ session_start();
 
       <div style="display: flex; justify-content: center; gap: 40px; margin-top: 30px;">
         <!-- Переделываем кнопки в обычные ссылки-кнопки (так правильнее, чем пустые формы методом POST) -->
-        <a href="/reg.php" style="padding: 10px 20px; background: chartreuse; color: black; text-decoration: none; border-radius: 5px; font-size: 20px;">Регистрация</a>
-        <a href="/auth.php" style="padding: 10px 20px; background: cyan; color: black; text-decoration: none; border-radius: 5px; font-size: 20px;">Авторизация</a>
+        <a href="/pages-site/reg.php" style="padding: 10px 20px; background: chartreuse; color: black; text-decoration: none; border-radius: 5px; font-size: 20px;">Регистрация</a>
+        <a href="/pages-site/auth.php" style="padding: 10px 20px; background: cyan; color: black; text-decoration: none; border-radius: 5px; font-size: 20px;">Авторизация</a>
       </div>
 
       <br>

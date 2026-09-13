@@ -53,14 +53,19 @@ $nav = $sql->fetch(PDO::FETCH_ASSOC);
               font-size: 25px;
             }
           }
+
+          .nav-btn {
+            padding: 5px 15px 5px 15px;
+            border: 1px solid #fff;
+            color: aqua;
+            font-size: 20px;
+
+            &::placeholder {
+              color: red;
+              font-size: 25px;
+            }
+          }
         </style>
-
-        <form action="../login.php" method="post">
-          <label class="nav-lab">введи пароль 111</label>&nbsp;&nbsp;
-          <input class="nav-inp" type="text" name="pass" placeholder="вводи осторожно">&nbsp;&nbsp;
-          <input class="nav-inp" type="submit" name="btn" value="войти">
-        </form>
-
 
         <div class="burger-btn">
           <span></span>
@@ -69,6 +74,7 @@ $nav = $sql->fetch(PDO::FETCH_ASSOC);
         </div>
         <div class="menu-item">
           <ul class="nav__menu">
+            <a href="/login.php">  <input class="nav-btn" type="submit" value="войти"></a>
             <li class="nav__item"><a href="/user.php" class="nav__link"><?= htmlspecialchars($nav['about'] ?? 'about') ?></a></li>
             <li class="nav__item"><a href="/user.php" class="nav__link"><?= htmlspecialchars($nav['menu'] ?? 'menu') ?></a></li>
             <li class="nav__item"><a href="/user.php" class="nav__link"><?= htmlspecialchars($nav['gallery'] ?? 'gallery') ?></a></li>
