@@ -1,4 +1,4 @@
-<?php require_once "./pages/nav.php" ?>
+<?php require_once "./pages/nav.php"; ?>
 <?php
 $sql = "SELECT * FROM header";
 $sql = $pdo->prepare($sql);
@@ -16,47 +16,48 @@ $header = $sql->fetch(PDO::FETCH_ASSOC);
       <span class="header__span"><?= $header['txt'] ?></span>
       <a href="/pages-site/book-table.php"><button class="header__button button"><?= $header['button'] ?></button></a>
       <a href="/footer"><img class="arrow-img" src="./image/header/<?= $header['arrow'] ?>" alt="05"></a>
-
     </div><!--header__inner-->
   </div><!--container-->
 </div><!--header-->
 
-<section class="perfection">
+<?php require_once "./pages/perfection.php"; ?>
+
+<?php require_once "./pages/details.php"; ?>
+
+
+<section class="reach-this">
   <div class="container">
+    <div class="reach-this__content">
 
-    <div class="perfection__content">
+      <div class="reach-this_content">
 
-      <div class="perfection__top">
-        <h2 class="perfection__title">PERFECTION</h2>
-        <div class="perfection__suptitle">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="reach-this__top">
+          <h2 class="reach-this__title title">HOW WE REACH THIS?</h2>
+          <div class="reach-this__suptitle suptitle">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <img class="this-pic" src="/image/reach-this/this-pic.png" alt="05-1">
+
+        </div><!--perfection__top-->
+
+        <div class="reach-this__row">
+          <div class="diffrent">
+            <img src="/image/reach-this/01.jpg" alt="01">
+          </div>
+          <div class="fresh">
+            <img src="/image/reach-this/02.jpg" alt="02">
+          </div>
+          <div class="best">
+            <img src="/image/reach-this/03.jpg" alt="03">
+          </div>
         </div>
-        <img class="top-pic" src="/image/perfection/05-1.png" alt="05-1">
+      </div>
 
-      </div><!--perfection__top-->
-
-      <div class="perfection__row">
-        <div class="desserts">
-          <img class="desserts-img" src="/image/perfection/03.jpg" alt="desserts-img">
-        </div>
-
-        <div class="smoothies">
-          <img class="smoothies-img" src="/image/perfection/02-2.jpg" alt="smoothies-img">
-        </div>
-
-        <div class="breakfast">
-          <img class="breakfast-img" src="/image/perfection/01.jpg" alt="breakfast-img">
-        </div>
-      </div><!--perfection__row-->
-
-      <a href="/our-offers.php" class="perfection__link-pic">
-        <img class="pic-4" src="/image/perfection/04.png" alt="04">
-      </a>
-    </div><!--perfection__content-->
-  </div><!--container-->
+    </div>
 </section>
 
-<br><br>
+
+<br>
 <script src="./js/main.js"></script>
 </body>
 

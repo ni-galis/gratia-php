@@ -840,7 +840,7 @@ body.lock {
 .perfection__content {
   max-width: 100%;
   height: auto;
-  min-height: 1374px;
+  min-height: 1251px;
   background-color: #fff;
   position: relative;
 }
@@ -855,6 +855,11 @@ body.lock {
 }
 
 .perfection__title {
+  padding-top: 123px;
+  margin-bottom: 7px;
+}
+
+.title {
   font-size: 45px;
   font-family: "Montserrat", sans-serif;
   color: rgb(21, 27, 40);
@@ -863,11 +868,20 @@ body.lock {
   letter-spacing: 0.1rem;
   z-index: 1;
   text-align: center;
-  padding-top: 123px;
-  margin-bottom: 7px;
 }
 
 .perfection__suptitle {
+  font-size: 24px;
+  font-family: "CrimsonText";
+  color: rgb(139, 144, 157);
+  font-style: italic;
+  line-height: 1.5;
+  letter-spacing: -0.1rem;
+  text-align: center;
+  z-index: 1;
+}
+
+.suptitle {
   font-size: 24px;
   font-family: "CrimsonText";
   color: rgb(139, 144, 157);
@@ -972,6 +986,9 @@ body.lock {
 }
 
 @media (max-width: 2000px) {
+  .perfection__content {
+    min-height: 1250px;
+  }
   .smoothies {
     -webkit-transform: translateY(-95px);
         -ms-transform: translateY(-95px);
@@ -1215,5 +1232,168 @@ body.lock {
   }
   .nav-inp__btn {
     display: none;
+  }
+}
+.details__content {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  min-height: 710px;
+}
+
+.details__img {
+  margin-top: 140px;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+@media (max-width: 850px) {
+  .details__img {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 768px) {
+  .details__content {
+    min-height: 650px;
+  }
+}
+@media (max-width: 575px) {
+  .details__content {
+    min-height: 540px;
+  }
+}
+@media (max-width: 480px) {
+  .details__content {
+    min-height: 450px;
+  }
+}
+@media (max-width: 320px) {
+  .details__content {
+    min-height: 310px;
+  }
+  .details__img {
+    margin-top: 100px;
+  }
+}
+.reach-this__content {
+  max-width: 100%;
+  height: auto;
+  min-height: 880px;
+  background-color: #fff;
+}
+
+.reach-this__title {
+  font-size: 45px !important;
+  padding-top: 115px;
+  margin-bottom: 7px;
+}
+
+.this-pic {
+  max-width: 100%;
+  margin-top: -150px;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.reach-this__row {
+  padding-top: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 1920px) {
+  .reach-this__content {
+    height: auto;
+    min-height: 1480px;
+  }
+  .reach-this__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .reach-this__content {
+    /* Позволяет блоку идеально подстраиваться под контент */
+    height: auto;
+    min-height: 0; /* Сбрасываем минимальную высоту, если она была задана для ПК */
+    /* Добавляем отступы сверху и снизу, чтобы контент не прилипал к краям */
+    padding-top: 60px;
+    padding-bottom: 50px;
+  }
+}
+.reach-this__top {
+  padding-top: 0px;
+  margin-bottom: 50px;
+}
+
+.reach-this__row {
+  padding: 0 20px;
+}
+
+.reach-this__title {
+  font-size: 35px;
+}
+
+.reach-this__suptitle {
+  font-size: 20px;
+}
+
+.this-pic {
+  max-width: 70%;
+  margin-top: -100px;
+}
+
+@media (max-width: 575px) {
+  .reach-this__row {
+    gap: 30px;
+  }
+  .reach-this__title {
+    font-size: 35px !important;
+    padding-top: 20px;
+    margin-bottom: 7px;
+  }
+}
+@media (max-width: 480px) {
+  .reach-this__title {
+    font-size: 30px !important;
+  }
+  .reach-this__suptitle {
+    font-size: 18px;
+  }
+  .diffrent {
+    margin-top: -30px;
+  }
+}
+@media (max-width: 320px) {
+  .reach-this__content {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+  .reach-this__title {
+    font-size: 20px !important;
+  }
+  .reach-this__suptitle {
+    font-size: 14px;
+  }
+  .this-pic {
+    margin-top: -70px;
   }
 }
