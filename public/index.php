@@ -26,27 +26,7 @@ $header = $sql->fetch(PDO::FETCH_ASSOC);
 
 <?php require_once "./pages/reach-this.php"; ?>
 
-<footer class="footer">
-  <div class="container">  
-
-    <div class="footer__content">
-
-      <div class="footer__top">
-        <img class="footer__footer-logo" src="/image/footer/footer-logo.jpg" alt="footer-logo">
-      </div><!--footer__top-->
-
-      <div class="footer__title">Gratia Restaurant</div>
-      <span class="footer__txt">Copyright 2016. All rights reserved by symu</span>
-
-      <div class="social">
-        <img class="fb-img" src="/image/footer/FB.jpg" alt="fb">
-        <img class="tr-img" src="/image/footer/TR.jpg" alt="tr">
-        <img class="ig-img" src="/image/footer/IG.jpg" alt="ig">
-      </div>
-    </div><!--footer__content-->
-  </div><!--container-->
-</footer>
-
+<?php require_once "./pages/footer.php"; ?>
 
 
 <br>
