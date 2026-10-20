@@ -24,37 +24,29 @@ $header = $sql->fetch(PDO::FETCH_ASSOC);
 
 <?php require_once "./pages/details.php"; ?>
 
+<?php require_once "./pages/reach-this.php"; ?>
 
-<section class="reach-this">
-  <div class="container">
-    <div class="reach-this__content">
+<footer class="footer">
+  <div class="container">  
 
-      <div class="reach-this_content">
+    <div class="footer__content">
 
-        <div class="reach-this__top">
-          <h2 class="reach-this__title title">HOW WE REACH THIS?</h2>
-          <div class="reach-this__suptitle suptitle">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </div>
-          <img class="this-pic" src="/image/reach-this/this-pic.png" alt="05-1">
+      <div class="footer__top">
+        <img class="footer__footer-logo" src="/image/footer/footer-logo.jpg" alt="footer-logo">
+      </div><!--footer__top-->
 
-        </div><!--perfection__top-->
+      <div class="footer__title">Gratia Restaurant</div>
+      <span class="footer__txt">Copyright 2016. All rights reserved by symu</span>
 
-        <div class="reach-this__row">
-          <div class="diffrent">
-            <img src="/image/reach-this/01.jpg" alt="01">
-          </div>
-          <div class="fresh">
-            <img src="/image/reach-this/02.jpg" alt="02">
-          </div>
-          <div class="best">
-            <img src="/image/reach-this/03.jpg" alt="03">
-          </div>
-        </div>
+      <div class="social">
+        <img class="fb-img" src="/image/footer/FB.jpg" alt="fb">
+        <img class="tr-img" src="/image/footer/TR.jpg" alt="tr">
+        <img class="ig-img" src="/image/footer/IG.jpg" alt="ig">
       </div>
+    </div><!--footer__content-->
+  </div><!--container-->
+</footer>
 
-    </div>
-</section>
 
 
 <br>

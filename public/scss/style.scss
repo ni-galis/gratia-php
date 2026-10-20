@@ -34,6 +34,7 @@ $col: aqua;
 
 body {
   background-color: #302f2f;
+
   &.lock {
     overflow: hidden;
   }
@@ -44,6 +45,7 @@ body {
   max-width: 2030px;
   padding: 0 15px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 //---------------- PAGES-SITE ----------
@@ -1189,7 +1191,7 @@ body {
   background-size: cover;
   max-width: 100%;
   //height: auto;
-  min-height: 710px;
+  min-height: 708px;
 }
 
 .details__img {
@@ -1237,54 +1239,44 @@ body {
 .reach-this__content {
   max-width: 100%;
   height: auto;
-  min-height: 880px;
+  min-height: 806px;
   background-color: #fff;
 }
 
-.reach-this__top {
-  //padding-top: 115px;
-}
 .reach-this__title {
-      font-size: 45px !important ;
-  //font-family: "Montserrat", sans-serif;
-  //color: rgb( 21, 27, 40 );
-  //font-weight: bold;
-  //line-height: 1.7;
-
-
- padding-top: 115px;
+  font-size: 45px !important ;
+  padding-top: 115px;
   margin-bottom: 7px;
-}
-
-
-.title {
-
-
-}
-.reach-this__suptitle {
-}
-.suptitle {
 }
 
 .this-pic {
   max-width: 100%;
+  height: 174px;
   margin-top: -150px;
   margin-left: 50%;
   transform: translateX(-50%);
 }
 
 .reach-this__row {
-  padding-top: 75px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   //justify-content: center;
 }
 
+@media (max-width: 2000px) {
+  .reach-this__content {
+    max-width: 100%;
+    height: auto;
+    min-height: 817px;
+    background-color: #fff;
+  }
+}
+
 @media (max-width: 1920px) {
   .reach-this__content {
     height: auto;
-    min-height: 1480px;
+    min-height: 1490px;
   }
 
   .reach-this__row {
@@ -1293,6 +1285,13 @@ body {
     gap: 50px;
   }
 }
+
+//@media (max-width: 1612px) {
+//   .reach-this__content {
+
+//    min-height: 1495px;
+//  }
+//}
 
 @media (max-width: 768px) {
   .reach-this__content {
@@ -1329,52 +1328,204 @@ body {
 
 @media (max-width: 575px) {
   .reach-this__row {
-  gap: 30px;
-}
+    gap: 30px;
+  }
 
-.reach-this__title {
-      font-size: 35px !important ;
-  //font-family: "Montserrat", sans-serif;
-  //color: rgb( 21, 27, 40 );
-  //font-weight: bold;
-  //line-height: 1.7;
+  .reach-this__title {
+    font-size: 35px !important ;
+    //font-family: "Montserrat", sans-serif;
+    //color: rgb( 21, 27, 40 );
+    //font-weight: bold;
+    //line-height: 1.7;
 
-
- padding-top: 20px;
-  margin-bottom: 7px;
-}
+    padding-top: 20px;
+    margin-bottom: 7px;
+  }
 }
 
 @media (max-width: 480px) {
   .reach-this__title {
-  font-size: 30px !important;
-}
+    font-size: 30px !important;
+  }
 
-.reach-this__suptitle {
-  font-size: 18px;
-}
+  .reach-this__suptitle {
+    font-size: 18px;
+  }
 
-.diffrent {
-  margin-top: -30px;
-}
+  .diffrent {
+    margin-top: -30px;
+  }
 }
 
 @media (max-width: 320px) {
-    .reach-this__content {
+  .reach-this__content {
     padding-top: 30px;
     padding-bottom: 50px;
   }
 
-    .reach-this__title {
-  font-size: 20px !important;
+  .reach-this__title {
+    font-size: 20px !important;
+  }
+
+  .reach-this__suptitle {
+    font-size: 14px;
+  }
+
+  .this-pic {
+    margin-top: -70px;
+  }
 }
 
+//-------------- FOOTER -------------------
 
-.reach-this__suptitle {
-  font-size: 14px;
+.footer__content {
+  max-width: 100%;
+  height: auto;
+  min-height: 455px;
+  background-color: #fff;
 }
 
-.this-pic {
-  margin-top: -70px;
+.footer__top {
+  width: 100%;
 }
+
+.footer__title {
+  font-size: 18px;
+  font-family: "Montserrat";
+  color: rgb(22, 27, 41);
+  font-weight: bold;
+  line-height: 2;
+  position: absolute;
+  left: 936px;
+  top: 4030px;
+  z-index: 1;
+}
+
+.footer__txt {
+  font-size: 18px;
+  font-family: "CrimsonText";
+  color: rgb(139, 144, 157);
+  font-style: italic;
+  line-height: 2;
+  position: absolute;
+  left: 858px;
+  top: 4065px;
+  z-index: 1;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 150px;
+}
+
+.fb-img {
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.tr-img {
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.ig-img {
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+@media (max-width: 1920px) {
+  .footer__top {
+    margin-top: -1px;
+  }
+
+  .footer__content {
+    min-height: 350px;
+  }
+
+  .social {
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 990px) {
+  .footer__content {
+    min-height: 220px;
+  }
+  .social {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer__content {
+    min-height: 200px;
+  }
+}
+
+@media (max-width: 575px) {
+  .footer {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .footer__content {
+    min-height: 0 !important; // Сбрасываем минимальную высоту распорки
+    height: auto !important;
+    padding: 30px 15px !important; // Делаем аккуратные внутренние отступы
+    display: flex;
+    flex-direction: column;
+    align-items: center; // Центрируем всё на мобилке
+    justify-content: center;
+    text-align: center;
+  }
+
+  // Сбрасываем жесткое абсолютное позиционирование, которое ломало высоту body
+  .footer__title,
+  .footer__txt {
+    position: static !important; /* Элементы встают в нормальный поток контента */
+    left: auto !important;
+    top: auto !important;
+    margin: 5px 0 !important;   
+
+    width: 100%;
+  }
+
+  .footer__top {
+    margin-top: 0 !important;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;   
+
+  }
+
+  .footer__footer-logo {
+    max-width: 100px; // Делаем логотип компактным на мобильном
+    height: auto;
+  }
+
+  .social {
+    margin-top: 20px !important; // огромный десктопный отступ
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 320px) {
+  .footer__content {
+    min-height: 60px;
+    align-items: stretch;
+  }
+
+  .footer__top {
+    display: none;
+  }
+
+  .social {
+    margin-top: -20px;
+  }
 }
