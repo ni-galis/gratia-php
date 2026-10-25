@@ -1,0 +1,1 @@
+<h1>admin_pages details.php</h1>

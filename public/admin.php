@@ -29,8 +29,12 @@
       <!--</div>-->
       <br><br><a href="./../logout.php" style="color:#f02b2bff">Выйти</a><br><br>
 
-      <a href="./admin_pages/logo.php" style="color:aqua">nav</a> |
-      <a href="./admin_pages/logo.php" style="color:aqua">header</a> |
+      <a href="../admin_pages/nav.php" style="color:aqua">nav</a> |
+      <a href="./admin_pages/header.php" style="color:aqua">header</a> |
+      <a href="./admin_pages/perfection.php" style="color:aqua">perfection</a> |
+      <a href="./admin_pages/details.php" style="color:aqua">details</a> |
+      <a href="./admin_pages/reach-this.php" style="color:aqua">reach-this</a> |
+      <a href="./admin_pages/footer.php" style="color:aqua">footer</a> |
   </div>
 
 <?php else:

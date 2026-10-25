@@ -31,7 +31,7 @@ $nav = $sql->fetch(PDO::FETCH_ASSOC);
     <div class="container">
       <div class="nav__content">
         <div class="nav-logo">
-          <img class="logo-img" src="./image/nav/logo.jpg" alt="logo">
+          <img class="logo-img"src="/../img/<?= $nav['filename'] ?>" alt="logo-img">
           <a href="pages-site/gratia.php"><span class="logo-txt"><?php echo $nav['logo'] ?></span></a>
         </div>
 
